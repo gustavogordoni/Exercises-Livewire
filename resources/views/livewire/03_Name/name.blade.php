@@ -2,7 +2,8 @@
     <h1 class="text-center">{{ $title }}</h1>
 
     <div class="row d-flex justify-content-center">
-        <button class="btn btn-primary col-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Seu nome</button>
+        <button class="btn btn-primary col-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Seu
+            nome</button>
     </div>
 
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
@@ -16,15 +17,26 @@
                 <div class="modal-body">
                     <label for="name">Informe seu nome:</label>
                     <input type="text" id="name" class="form-control" wire:model="name">
-    
+
                     <label for="age" class="mt-2">Informe sua idade:</label>
                     <input type="number" id="age" class="form-control" wire:model="age">
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success" type="submit" data-bs-toggle="modal" wire:click>Enviar</button>
+                    <button class="btn btn-success" type="submit" data-bs-toggle="modal" wire:click="exibirInfo"
+                        k>Enviar</button>
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
+
+    @empty(!$name && !$age)
+    <hr>
+    @empty(!$name)
+    <h3 class="text-center">Seu nome é: <em>{{ $name }}</em></h3>
+    @endempty
+    @empty(!$age)
+    <h3 class="text-center">Sua idade é: <em>{{ $age }}</em></h3>
+    @endempty
+    @endempty
 
 </div>
