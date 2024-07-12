@@ -54,6 +54,18 @@
             <li class="list-group-item col-5 text-link">Background</li>
         </ul>
     </a>
+    <a href="/name" class="link-underline link-underline-opacity-0">
+        <ul class="list-group list-group-horizontal d-flex justify-content-center my-1">
+            <li class="list-group-item col-1 text-center number-link">03</li>
+            <li class="list-group-item col-5 text-link">Seu nome</li>
+        </ul>
+    </a>
+    <a href="/calculator" class="link-underline link-underline-opacity-0">
+        <ul class="list-group list-group-horizontal d-flex justify-content-center my-1">
+            <li class="list-group-item col-1 text-center number-link">04</li>
+            <li class="list-group-item col-5 text-link">Calculadora</li>
+        </ul>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
