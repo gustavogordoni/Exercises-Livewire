@@ -1,0 +1,14 @@
+.number-link && .text-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.number-link {
+    color: #fb70a9;
+    border: 1px solid #fb70a9;
+}
+
+.text-link:hover {
+    color: #4e56a6;
+    border: 1px solid #4e56a6;
+}
