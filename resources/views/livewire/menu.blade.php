@@ -47,4 +47,10 @@
             <li class="list-group-item col-5 text-link">Dropdown em cascata</li>
         </ul>
     </a>
+    <a href="{{ route('products') }}" class="link-underline link-underline-opacity-0">
+        <ul class="list-group list-group-horizontal d-flex justify-content-center my-1">
+            <li class="list-group-item col-1 text-center number-link">06</li>
+            <li class="list-group-item col-5 text-link">Pesquisa e paginação de produtos</li>
+        </ul>
+    </a>
 </div>

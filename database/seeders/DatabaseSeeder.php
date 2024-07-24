@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use App\Models\Continent;
 use App\Models\Country;
+use App\Models\Product;
 
 class DatabaseSeeder extends Seeder
 {
@@ -93,5 +94,7 @@ class DatabaseSeeder extends Seeder
         foreach ($countries as $country) {
             Country::create($country);
         }
+
+        Product::factory(100)->create();
     }
 }
